@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+::selection{
+	color: white;
+}
+#section{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    background-color: rgb(185, 182, 182);
+    background-image: url('img/header2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -150px;
+    background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    
+}
+#section img{
+    width: 90%;
+    height: auto;
+    position: absolute;
+    animation: Auf 1s  ;
+	transform: scale(0);
+	animation-iteration-count: 3;
+	animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+@keyframes Auf{
+from{
+	transform: scale(0);
+}
+to{
+	transform: scale(1);
+}
+}
+
+
+
+#section-one{
+	width: 100%;
+	height: 70vh;
+	background-attachment: fixed;
+	background-color: rgb(37, 35, 35);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+} 
+.toplam-2{
+	display:flex ;
+	flex-direction: row;
+	width: 50%;
+	justify-content: space-around;
+	
+	
+}
+.xira{
+	width: 250px;
+	height: 300px;
+	background-color: red;
+	z-index: 999;
+}
+.anime-video-card{
+	width:250px ;
+	height: 300px;
+	border-radius: 15px;
+	border: 2px solid red;
+	overflow: hidden;
+	min-width: 250px;
+	position: relative;
+	background-color: white;
+	box-shadow: 0 20px 40px black;
+}
+/* .anime-video-card:hover{
+	box-shadow: 0 20px 40px black;
+} */
+.anime-video-card:hover .hover{
+transform: scale(1);
+cursor: pointer;
+}
+label{
+	cursor: pointer;
+}
+.hover{
+	position: absolute;
+	transform: scale(0);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .2s linear;
+	background-color: rgba(0, 0, 0, 0.671);
+	
+}
+.btn{
+	padding: 10px 50px;
+	border: 1px solid rgb(11, 187, 11);
+	background-color: rgb(11, 187, 11);
+	color: white;
+	font-size: 18px; ;
+	box-shadow: 0 10px 40px black;
+	text-decoration: none;
+	font-family: 'Courier New', Courier, monospace;
+}
+.anime-video{
+	width: 100%;
+	height: 150px;
+	background-color: aqua;
+}
+.anime-video img{
+	width: 100%;
+	height: 100%;
+}
+.anime-text{
+	width: 100%;
+	height: 150px;
+}
+.after{
+	font-size: 18px;
+	color: black;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nick{
+	font-family: sans-serif;
+	color: red;
+}
+ #check,#check2,#check3,#check4{
+display: none;
+ }
+ ::-webkit-scrollbar{
+	 width: 10px;
+	 background-color: #f00;
+ }
+
+::-webkit-scrollbar-thumb{
+	border-radius: 15px;
+	background-color: black;
+	box-shadow: 0 0 15px wheat;
+	height: 5px;
+}
+@media only screen and (max-width:1327px){
+/* #section img {
+    top: -70%;
+} */
+}
+
+@media only screen and (max-width:1055px){
+
+    #section-one{
+        height: 110vh !important;
+        flex-direction: column !important;
+        
+    }
+	.toplam-2{
+		width: 100%;
+	}
+   
+}
+
+/*  */
+
+@media only screen and (max-width:510px){
+    #section-one{
+        height: auto !important;
+    }
+    .toplam-2{
+        display: inline-block;
+        
+    }
+.anime-video-card{
+    width: 80%;
+    height: auto ;
+    margin: auto;
+    margin-top: 25px;
+    min-width: 340px;
+}
+/* #section
+{
+    top: -10%;
+} */
+
+}
+

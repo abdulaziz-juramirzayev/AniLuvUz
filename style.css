@@ -3,6 +3,23 @@
     padding:0;
     box-sizing: border-box;
 }
+.malumot{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: fixed;
+	top: 90%;
+	right: 3%;
+	background-color: rgb(255, 0, 0);
+	box-shadow: 0 0 10px rgb(4, 252, 4);
+	font-size: 18px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 99999;
+
+}
 ::selection{
 	color: white;
 }
